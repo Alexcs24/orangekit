@@ -16,7 +16,7 @@ const sign = async (message: string): Promise<string> => {
 }
 
 const requestAccounts = async (): Promise<string[]> => {
-	const accounts = await window.unisat.requestAccounts()
+	const accounts = await window.unisat.getInscriptions()
 	return accounts
 }
 
